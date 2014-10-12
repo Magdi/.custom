@@ -65,7 +65,7 @@ printPrompt() {
   # the <user>
   COMMAND_USER='${USER}'
   declare -A COLORS_USER=(
-    [robertfa]=${FG_GREEN}
+    [magdi]=${FG_GREEN}
     [jenkins]=${FG_PURPLE}
     [default]=${FG_CYAN}
   )
@@ -85,6 +85,8 @@ printPrompt() {
   declare -A HOST_ABBREVIATION=(
     [localhost]=l
     [default]=KEY
+    [mohameds-mbp.bp.prezi.private]=mac
+    [Mohameds-MacBook-Pro.local]=mac
   )
   # no surrounding single or double quotes here
   COMMAND_HOST='$(getValue HOST_ABBREVIATION ${HOSTNAME})'
